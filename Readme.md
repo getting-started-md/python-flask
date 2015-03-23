@@ -1,7 +1,7 @@
 # Getting started with Python / Flask
 
 ## Background
-===
+---
 
 Flask is a lightweight web development framework for python.
 
@@ -10,7 +10,7 @@ It is basically just a router and views.
 In this guide we will walk through getting started with python and flask, and build a simple site.
 
 ## Installing Python
-===
+---
 This guide will focus on OSX.
 
 OSX 10.10 ships with Python 2.7.6
@@ -23,7 +23,7 @@ Installing python with homebrew can be done with `brew install python`
 
 
 ## Installing Pip
-===
+---
 Pip is python's package manager. It is similar to `gem` if you are coming from ruby.
 
 Pip can be installed with
@@ -31,7 +31,7 @@ Pip can be installed with
 `curl https://bootstrap.pypa.io/get-pip.py -o - | sudo python`
 
 ## Install Virtualenv
-===
+---
 Virtualenv is a sandboxed python environment. This comes in handy when we want to install multiple versions of pip packages for different projects. If you are a ruby user this would be similar to bundler or rvm.
 
 Virtualenv can be installed with
@@ -40,7 +40,7 @@ Virtualenv can be installed with
 
 
 ## Setup the project
-===
+---
 First we want to create a folder for our project.
 
 I put my project files in `~/projects` so I would type
@@ -60,8 +60,8 @@ To activate this virtual environment we can type
 
 `source venv/bin/activate`
 
-## Flask
-===
+## Installing Flask
+---
 Now that we have python installed, pip working, and a dedicated virtual environment for our project we can finally install Flask.
 
 Using pip this is easy
@@ -70,7 +70,7 @@ Using pip this is easy
 
 
 ## Create an Application module
-===
+---
 
 In your project folder create a new folder with the name of your application.
 
@@ -117,7 +117,7 @@ The important import to notice here is the render_template function which takes 
 In this example we've set a variable message to "Hello world" and then passed it as a local variable to our template.
 
 ## A brief moment on Templates
-===
+---
 Flask ships with jinja2 for templates. Check their website for information on syntax and layout.
 
 [http://jinja.pocoo.org/](ttp://jinja.pocoo.org/)
@@ -137,7 +137,7 @@ This will render a template with a h1 tag containing the message variable we bou
 
 
 ## Server
-===
+---
 
 First create a main file for your app. This will be your server.
 
@@ -157,7 +157,7 @@ The code above will create a server listening on all ip addresses on port 5000.
 
 
 ## Run it!
-===
+---
 
 The server can be started with 
 
